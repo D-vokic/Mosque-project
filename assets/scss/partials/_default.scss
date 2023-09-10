@@ -1,0 +1,93 @@
+@use "../variables" as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 0.7s ease-in-out;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+}
+
+html {
+
+    &::-webkit-scrollbar {
+        width: .8rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $secondaryColor;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $primaryColor;
+    }
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    color: #737373;
+    font-size: 100%;
+
+    @media (width < 576px) {
+        font-size: 80%;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+}
+
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+}
+
+section {
+    padding: 4.5rem 0;
+}
+
+i {
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (width < 576px) {
+        width: 90%;
+    }
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: $primaryColor;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: $secondaryColor;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+
+    @media (width <=576px) {
+        font-size: 2rem;
+    }
+}

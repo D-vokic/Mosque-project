@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+@mixin flex($justify: center, $align: center, $direction: row, $wrap: nowrap, $gap: 0px) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin grid($numberOfColumns, $value, $gap) {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax($numberOfColumns, $value));
+    gap: $gap;
+}
+
+@mixin position($position: absolute,
+    $top: auto,
+    $right: auto,
+    $bottom: auto,
+    $left: auto) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin btn($bg: $primaryColor, $padding: 1rem 1.5rem) {
+    text-transform: capitalize;
+    color: $secondaryColor;
+    background-color: $bg;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: $padding;
+    display: inline-block;
+    font-weight: 700;
+    transition: 0.5s ease;
+
+    &:hover {
+        color: $primaryColor;
+        background-color: $secondaryColor;
+    }
+}
+
+@mixin icons($unit: 3.6rem, $cursor: pointer) {
+    height: $unit;
+    width: $unit;
+    line-height: $unit;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: $cursor;
+    background: $primaryColor;
+    color: $secondaryColor;
+
+    &:hover {
+        color: $primaryColor;
+        background-color: $secondaryColor;
+    }
+}

@@ -1,1 +1,81 @@
 @use "../components/" as *;
+
+.activities {
+
+    &>h2,
+    &>h3 {
+        text-align: center;
+    }
+
+    .section-title {
+        font-weight: 400;
+    }
+
+    .section-subtitle {
+        font-size: 4rem;
+    }
+
+    &__wrapper {
+        margin-top: 2rem;
+        @include flex(space-between);
+        flex-wrap: wrap;
+        gap: 1rem 0;
+
+        .activities__item {
+            flex: 0 0 30%;
+            @include flex();
+            gap: 1rem;
+            box-shadow: 0 0 45px rgba(12, 18, 20, .08);
+            padding: 1rem;
+
+            @media (width<1200px) {
+                flex: 0 0 48%;
+            }
+
+            @media (width<768px) {
+                flex: 0 0 100%;
+            }
+
+            &:hover {
+                background-color: $primaryColor;
+            }
+
+            i {
+                color: $secondaryColor;
+                font-size: 4rem;
+                font-weight: 900;
+                cursor: auto;
+
+                @media (width<576px) {
+                    font-size: 3rem;
+                }
+            }
+
+            .activities__text {
+
+                .activities__heading {
+                    font-size: 1.3rem;
+                    color: $secondaryColor;
+
+                    @media (width<576px) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .activities__p {
+                    margin: 1rem 0;
+                }
+
+                .activities__btn {
+                    @include btn($primaryColor, .5rem .75rem);
+                }
+            }
+
+        }
+
+        .activities__item:hover .activities__btn {
+            background-color: white;
+            cursor: auto;
+        }
+    }
+}

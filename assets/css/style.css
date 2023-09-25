@@ -501,6 +501,95 @@ i {
   background-color: #111;
 }
 
+.activities > h2, .activities > h3 {
+  text-align: center;
+}
+.activities .section-title {
+  font-weight: 400;
+}
+.activities .section-subtitle {
+  font-size: 4rem;
+}
+.activities__wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  flex-wrap: wrap;
+  gap: 1rem 0;
+}
+.activities__wrapper .activities__item {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0px;
+  gap: 1rem;
+  box-shadow: 0 0 45px rgba(12, 18, 20, 0.08);
+  padding: 1rem;
+}
+@media (width < 1200px) {
+  .activities__wrapper .activities__item {
+    flex: 0 0 48%;
+  }
+}
+@media (width < 768px) {
+  .activities__wrapper .activities__item {
+    flex: 0 0 100%;
+  }
+}
+.activities__wrapper .activities__item:hover {
+  background-color: #f1c152;
+}
+.activities__wrapper .activities__item i {
+  color: #111;
+  font-size: 4rem;
+  font-weight: 900;
+  cursor: auto;
+}
+@media (width < 576px) {
+  .activities__wrapper .activities__item i {
+    font-size: 3rem;
+  }
+}
+.activities__wrapper .activities__item .activities__text .activities__heading {
+  font-size: 1.3rem;
+  color: #111;
+}
+@media (width < 576px) {
+  .activities__wrapper .activities__item .activities__text .activities__heading {
+    font-size: 1.2rem;
+  }
+}
+.activities__wrapper .activities__item .activities__text .activities__p {
+  margin: 1rem 0;
+}
+.activities__wrapper .activities__item .activities__text .activities__btn {
+  text-transform: capitalize;
+  color: #111;
+  background-color: #f1c152;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.activities__wrapper .activities__item .activities__text .activities__btn:hover {
+  color: #f1c152;
+  background-color: #111;
+}
+.activities__wrapper .activities__item:hover .activities__btn {
+  background-color: white;
+  cursor: auto;
+}
+
 /*----------------------------------------
 PARTIALS
 ----------------------------------------*/

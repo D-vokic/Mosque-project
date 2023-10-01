@@ -753,6 +753,62 @@ i {
   margin-right: 0.4rem;
 }
 
+.contact .section-title,
+.contact .section-subtitle {
+  text-align: center;
+}
+.contact .contact__p {
+  max-width: 750px;
+  margin: auto;
+  text-align: left;
+}
+@media (width < 576px) {
+  .contact .contact__p {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+.contact__wrapper {
+  margin-top: 3rem;
+}
+.contact__wrapper .contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+.contact__wrapper .contact__form__element,
+.contact__wrapper .contact__form textarea {
+  background-color: transparent;
+  padding: 1rem;
+  color: #737373;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+.contact__wrapper .contact__form__element::placeholder,
+.contact__wrapper .contact__form textarea::placeholder {
+  font-size: 1.1rem;
+}
+.contact__wrapper .contact__form .contact__btn {
+  text-transform: capitalize;
+  color: #111;
+  background-color: #f1c152;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.contact__wrapper .contact__form .contact__btn:hover {
+  color: #f1c152;
+  background-color: #111;
+}
+.contact__wrapper textarea {
+  font-size: 1.1rem;
+}
+
 .footer {
   padding: 4.5rem 0;
   background-color: #111;

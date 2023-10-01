@@ -87,6 +87,25 @@ i {
   }
 }
 
+@keyframes headerZoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes navAnimation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .header {
   background-image: url(../../assets/img/hero.jpg);
   height: 100vh;
@@ -173,6 +192,28 @@ i {
     display: none;
   }
 }
+.header .nav__list .nav__item {
+  animation-name: navAnimation;
+  animation-duration: 1s;
+}
+.header .nav__list .nav__item:nth-child(2) {
+  animation-delay: 100ms;
+}
+.header .nav__list .nav__item:nth-child(3) {
+  animation-delay: 200ms;
+}
+.header .nav__list .nav__item:nth-child(4) {
+  animation-delay: 300ms;
+}
+.header .nav__list .nav__item:nth-child(5) {
+  animation-delay: 400ms;
+}
+.header .nav__list .nav__item:nth-child(6) {
+  animation-delay: 500ms;
+}
+.header .nav__list .nav__item:nth-child(7) {
+  animation-delay: 600ms;
+}
 .header .nav__list .nav__item .nav__link {
   color: #0D0D0D;
   text-transform: capitalize;
@@ -254,6 +295,8 @@ i {
 .header__content .header__text {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 3rem;
+  animation-name: HeaderZoomIn;
+  animation-duration: 2s;
 }
 .header__content .header__text .header__heading {
   color: #111;

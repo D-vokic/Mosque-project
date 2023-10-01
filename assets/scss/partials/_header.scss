@@ -193,11 +193,6 @@
                 max-width: 550px;
 
                 @media (width < 768px) {
-                    font-size: 3.5rem;
-                    max-width: 100%;
-                }
-
-                @media (width < 576px) {
                     font-size: 3rem;
                 }
 

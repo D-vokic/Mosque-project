@@ -1,1 +1,200 @@
 @use "../components/" as *;
+
+.footer {
+    padding: 4.5rem 0;
+    background-color: $secondaryColor;
+
+
+    .container {
+        width: 90%;
+    }
+
+    &__newsletter {
+        padding-bottom: 2rem;
+        @include flex(space-between);
+        flex-wrap: wrap;
+        border-bottom: .7px solid #5f5141;
+        row-gap: 2rem;
+
+        &__text {
+            flex-basis: 45%;
+
+            @media (width<992px) {
+                flex-basis: 100%;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                color: white;
+
+                @media (width<768px) {
+                    font-size: 2rem;
+                }
+
+                @media (width<576px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            p {
+                color: #737373;
+            }
+        }
+
+        .footer__form {
+            flex-basis: 45%;
+            position: relative;
+
+            @media (width<992px) {
+                flex-basis: 100%;
+            }
+
+            input {
+                background-color: white;
+                color: rgb(115, 115, 115);
+                padding: 1.3rem;
+                font-size: 1.1rem;
+                width: 100%;
+
+                @media (width<576px) {
+                    font-size: .9rem;
+                }
+            }
+
+            button {
+                @include btn();
+                position: absolute;
+                top: 5px;
+                bottom: 5px;
+                right: 5px;
+            }
+        }
+    }
+
+    &__wrapper {
+        @include flex(space-between, flex-start);
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+
+        .footer__item {
+            flex-basis: 23%;
+
+            @media (width<1200px) {
+                flex-basis: 45%;
+            }
+
+            @media (width<768px) {
+                flex-basis: 100%;
+            }
+
+            .footer__heading {
+                color: white;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+
+                span {
+                    color: $primaryColor;
+                }
+            }
+
+            &>p {
+                line-height: 2;
+                font-size: .9rem;
+                color: #737373;
+                margin-bottom: 1rem;
+            }
+
+            .footer__btn {
+                @include btn();
+            }
+
+            h4 {
+                color: #737373;
+                margin-bottom: 1rem;
+            }
+
+            .footer__icon {
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(255, 255, 255, .08);
+                    padding-bottom: 1.3rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                i {
+                    @include icons(3rem);
+                    margin-right: 0.7rem;
+                }
+
+                a {
+                    color: #737373;
+
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+            }
+
+            .footer__list {
+
+                .footer__item {
+
+                    &:not(:last-child) {
+                        margin-bottom: .6rem;
+                    }
+
+                    i {
+                        color: $primaryColor;
+                        margin-right: 0.6rem;
+                    }
+
+                    a {
+                        color: #737373;
+
+                        &:hover {
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+
+            .footer__text {
+                color: #737373;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid rgba(255, 255, 255, .08);
+                }
+
+                a {
+                    color: #737373;
+
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    &__copy {
+        border-top: 1px solid rgba(255, 255, 255, .08);
+        padding-top: 2rem;
+        margin-top: 4rem;
+        @include flex(space-between);
+
+        @media (width<576px) {
+            flex-direction: column;
+        }
+
+        a {
+            color: $primaryColor;
+
+            span {
+                border-bottom: 1px solid rgba(255, 255, 255, .08);
+            }
+        }
+    }
+}

@@ -17,6 +17,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google fonts - Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -308,13 +311,16 @@
 
     <!-- Contact section starts -->
     <section class="contact" id="contact">
-        <h2 class="section-title">GET IN TOUCH</h2>
-        <h3 class="section-subtitle">Contact For Any Queries</h3>
-        <p class="contact__p">The contact form is currently inactive. Get a functional and working contact form with
+        <h2 class="section-title" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="100">GET IN
+            TOUCH</h2>
+        <h3 class="section-subtitle" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">Contact
+            For Any Queries</h3>
+        <p class="contact__p" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">The contact
+            form is currently inactive. Get a functional and working contact form with
             Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. Download Now.
         </p>
         <div class="contact__wrapper container">
-            <form action="" class="contact__form">
+            <form action="" class="contact__form" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
                 <input type="text" placeholder="Your Name" class="contact__form__element">
                 <input type="email" placeholder="Your Email" class="contact__form__element">
                 <input type="text" placeholder="Subject" class="contact__form__element">
@@ -413,6 +419,14 @@
     <!-- Top to scroll dugme starts -->
     <button onclick="topFunction()" id="scrollBtn" title="Go to top" class="fa-solid fa-arrow-up"></button>
     <!-- Top to scroll dugme ends -->
+
+    <!-- AOS JS FILE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- INITIALIZE AOS -->
+    <script>
+        AOS.init();
+    </script>
 
     <!-- MAIN JS FILE -->
     <script src="assets/js/main.js"></script>

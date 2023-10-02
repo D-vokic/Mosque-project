@@ -39,6 +39,10 @@
                 box-shadow: 0 0 45px rgba(12, 18, 20, .08);
                 height: 100%;
                 width: 90%;
+
+                animation-name: headerZoomIn;
+                animation-duration: 2s;
+                animation-delay: 100ms;
             }
 
             &>.team__name {
@@ -91,6 +95,10 @@
                 &__img {
                     position: relative;
                     overflow: hidden;
+
+                    animation-name: headerZoomIn;
+                    animation-duration: 2s;
+                    animation-delay: 200ms;
 
                     &:hover .team__overlay {
                         opacity: 1;

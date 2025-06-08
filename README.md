@@ -4,7 +4,7 @@ Responsive and modern website template for a mosque or Islamic community center.
 
 ## 🌐 Demo
 
-🔗 [Live Demo](#) 
+🔗 [Live Demo](https://d-vokic.github.io/Mosque-project/) 
 
 ---
 

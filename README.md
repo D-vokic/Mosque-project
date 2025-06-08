@@ -13,10 +13,10 @@ Responsive and modern website template for a mosque or Islamic community center.
 ```
 mosque-project/
 ├── assets/
-│ ├── css/
-│ │ └── style.css
-│ ├── img/
-│ │ └── [All images used in the website]
+│   ├── css/
+│   │   └── style.css
+│   ├── img/
+│   │   └── [All images used in the website]
 ├── index.html
 ```
 
@@ -50,23 +50,38 @@ mosque-project/
 1. Clone the repo:
    ```bash
    git clone https://github.com/D-vokic/mosque-project.git
+   ```
 2. Navigate into the folder:
    ```bash
    cd mosque-project
-3. Open index.html in your browser or with Live Server in VSCode.
+   ```
+3. Open `index.html` in your browser or with Live Server in VSCode.
+
+---
 
 ## 📸 Screenshots
 
+_screenshot.png_
+
+---
+
 ## 🙋‍♂️ Author
-Dusko Vokic
+
+**Dusko Vokic**  
 Web Developer | System Administrator
 
-GitHub: @D-vokic
+- GitHub: [@D-vokic](https://github.com/D-vokic)
+
+---
 
 ## 📜 License
+
 This project is licensed under the MIT License - feel free to use and modify it.
 
+---
+
 ## 🙏 Acknowledgements
-[Font Awesome](https://fontawesome.com/)
-[AOS Library](https://michalsnik.github.io/aos/)
-[Google Fonts](https://fonts.google.com/)
+
+- [Font Awesome](https://fontawesome.com/)
+- [AOS Library](https://michalsnik.github.io/aos/)
+- [Google Fonts](https://fonts.google.com/)

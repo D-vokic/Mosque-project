@@ -61,8 +61,7 @@ mosque-project/
 Dusko Vokic
 Web Developer | System Administrator
 
-GitHub: @your-username
-LinkedIn: Dusko Vokic
+GitHub: @D-vokic
 
 ## 📜 License
 This project is licensed under the MIT License - feel free to use and modify it.

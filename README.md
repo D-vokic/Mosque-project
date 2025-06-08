@@ -61,7 +61,8 @@ mosque-project/
 
 ## 📸 Screenshots
 
-_screenshot.png_
+![Mosque Project Demo](screenshot.png)
+
 
 ---
 
